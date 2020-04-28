@@ -1,0 +1,21 @@
+.sidenav{
+    background: white;
+    min-width: 240px !important;
+}
+.logo {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .logo img{
+      width: 100%;
+  }
+  .menu-header {
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.ant-menu-item-selected {
+    background-color: #d9363e !important;
+    color: #fff;
+}
+.ant-menu-item::after {
+    border-right: 3px solid #faad14 !important;
+}

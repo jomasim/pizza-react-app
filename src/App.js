@@ -1,12 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Home from "../src/views/Home";
 
 function App() {
-  return (
-    <div className="App">
-        <h1>Welcome to pizza app</h1>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
