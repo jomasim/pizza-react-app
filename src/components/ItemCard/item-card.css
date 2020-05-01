@@ -1,6 +1,25 @@
 button.ant-btn.order-button.ant-btn-primary.ant-btn-round.ant-btn-sm {
-    margin-top: 10px;
-    width: 100%;
-    background: #fff;
-    color: #d9363e;
+  margin-top: 10px;
+  width: 100%;
+  background: #fff;
+  color: #d9363e;
+}
+.meta-details {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+}
+span.card-item-amount {
+  margin-left: auto;
+  color: #d9363e;
+}
+.ant-btn-primary {
+  border-color: rgb(163, 163, 163);
+}
+.ant-card.ant-card-bordered {
+  cursor: pointer;
+}
+
+.ant-card.ant-card-bordered {
+    max-height: 350px;
 }

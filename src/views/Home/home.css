@@ -1,8 +1,18 @@
-
-  .site-layout .site-layout-background {
-    background: #fff;
-  }
-    [data-theme="dark"] .site-layout .site-layout-background {
-      background: #141414;
-    }
-  
+.site-layout .site-layout-background {
+  background: #fff;
+  width: 100%;
+}
+[data-theme="dark"] .site-layout .site-layout-background {
+  background: #141414;
+}
+.main.ant-layout-content {
+  width: 80%;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+.products-container {
+  display: flex;
+  flex-direction: row;
+}

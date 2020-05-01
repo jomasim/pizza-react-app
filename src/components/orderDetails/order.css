@@ -1,0 +1,55 @@
+.right-sidebar {
+  width: 400px;
+  background: white;
+}
+.order-item {
+  padding: 0 16px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.item-detail {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+}
+.item-count {
+  margin-left: auto;
+  color: #9fa2a5;
+}
+span.order-item-amount {
+  margin-left: auto;
+  color: #d9363e;
+}
+.divider {
+  width: 1px;
+}
+.order-total-item {
+  display: flex;
+  flex-direction: row;
+  padding: 0 16px;
+  font-size: 18px;
+}
+.total-amount {
+  margin-left: auto;
+  color: #d9363e;
+}
+.cancel-button {
+  border: none;
+  box-shadow: none;
+  margin-top: 10px;
+  width: 100%;
+  background: #fff;
+  color: #d9363e;
+}
+.order-button {
+  background: #3a980c !important;
+  color: #fff !important;
+}
+.order-image {
+  width: 100%;
+}
+button.ant-btn.cancel-button.ant-btn-primary.ant-btn-round.ant-btn-sm:hover {
+  background: #fff;
+  color: #ff4d4f;
+}
