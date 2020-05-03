@@ -1,11 +1,41 @@
 aside.sidenav.ant-layout-sider.ant-layout-sider-dark {
-    height: 100vh;
+  height: 100vh;
 }
-.checkout-container{
-    width: 500px;
-    background: grey;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 200px;
+.checkout-container {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 16px;
+}
+.delivery-item {
+  display: flex;
+  width: 350px;
+  padding-left: 16px;
+  margin-top: 100px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.confirm-btn.ant-btn-primary.ant-btn-loading {
+  margin-left: auto !important;
+  background: #52c41a !important;
+}
+button.ant-btn.confirm-btn.ant-btn-primary {
+  margin-left: auto;
+  background: #189e16;
+}
+button.ant-btn.cancel-btn.ant-btn-primary {
+  background: #d9363e;
+}
+.order-button-group {
+  display: flex;
+  margin-top: 20px;
+}
+a.back-btn {
+  font-size: 20px;
+  color: #6b6354;
+  margin-right: auto;
+}
+.ant-form-item-extra {
+    color: #d9373e;
 }

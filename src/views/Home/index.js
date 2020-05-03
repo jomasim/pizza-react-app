@@ -47,16 +47,20 @@ class Home extends Component {
         <div style={{ display: "flex", flexDirection: "row" }}>
           <SideNav />
           <div className="products-container">
-            {products.map((item) => {
-              item["count"] = 1;
-              return (
-                <ItemCard
-                  key={item.id}
-                  data={item}
-                  addToCart={this.addToCart}
-                />
-              );
-            })}
+            {products.length === 0 ? (
+              <h2>No products available</h2>
+            ) : (
+              products.map((item) => {
+                item["count"] = 1;
+                return (
+                  <ItemCard
+                    key={item.id}
+                    data={item}
+                    addToCart={this.addToCart}
+                  />
+                );
+              })
+            )}
           </div>
           <OrderDetails />
         </div>

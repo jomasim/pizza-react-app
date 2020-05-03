@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 import "./order.css";
 import orderImage from "./order-image.svg";
 import OrderItem from "../OrderItem";
 
 class OrderDetails extends Component {
   render() {
-    const { cart, history } = this.props;
-    console.log('this', this.props)
+    const { cart } = this.props;
     return (
       <div className="right-sidebar">
         <img src={orderImage} alt="order details" className="order-image" />
@@ -26,9 +26,8 @@ class OrderDetails extends Component {
             shape="round"
             size={"small"}
             className="order-button done-button"
-            onClick={() => history.push("/checkout")}
           >
-            Done
+            <Link to="/checkout">Done</Link>
           </Button>
           <Button
             type="primary"

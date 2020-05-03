@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Layout, Menu } from "antd";
+import { Link } from "react-router-dom";
 import { PieChartOutlined } from "@ant-design/icons";
 import "./sidenav.css";
 import logo from "./logo.svg";
@@ -28,12 +29,14 @@ class SideNav extends Component {
           <img src={logo} alt="logo here ..." />
         </div>
         <div className="menu-header">
-            <h2>Menu</h2>
+          <h2>Menu</h2>
         </div>
         <Menu theme="light" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item key="1">
             <PieChartOutlined />
-            <span>Pizza</span>
+            <Link style={{ color: "#fff" }} to="/">
+              Pizza
+            </Link>
           </Menu.Item>
           <Menu.Item key="2">
             <PieChartOutlined />
