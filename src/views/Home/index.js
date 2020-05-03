@@ -8,7 +8,7 @@ import SideNav from "../../components/Sidenav";
 import ItemCard from "../../components/ItemCard";
 import OrderDetails from "../../components/orderDetails";
 
-const { Content, Footer } = Layout;
+const { Footer } = Layout;
 
 class Home extends Component {
   state = {
@@ -43,33 +43,24 @@ class Home extends Component {
   render() {
     const { products } = this.state;
     return (
-      <Layout style={{ minHeight: "100vh" }}>
-        <SideNav />
-        <Layout className="site-layout">
-          <div className="main-container">
-            <Content style={{ margin: "0 16px" }}>
-              <div
-                className="site-layout-background"
-                style={{ padding: 24, minHeight: "100vh" }}
-              >
-                <div className="products-container">
-                  {products.map((item) => {
-                    item['count'] = 1;
-                    return (
-                      <ItemCard
-                        key={item.id}
-                        data={item}
-                        addToCart={this.addToCart}
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-            </Content>
-            <OrderDetails />
+      <Layout className="site-layout">
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <SideNav />
+          <div className="products-container">
+            {products.map((item) => {
+              item["count"] = 1;
+              return (
+                <ItemCard
+                  key={item.id}
+                  data={item}
+                  addToCart={this.addToCart}
+                />
+              );
+            })}
           </div>
-          <Footer style={{ textAlign: "center" }}>Pizza World ©2020</Footer>
-        </Layout>
+          <OrderDetails />
+        </div>
+        <Footer style={{ textAlign: "center" }}>Pizza World ©2020</Footer>
       </Layout>
     );
   }

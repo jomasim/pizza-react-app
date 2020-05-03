@@ -2,8 +2,9 @@
   background: #fff;
   width: 100%;
 }
-[data-theme="dark"] .site-layout .site-layout-background {
-  background: #141414;
+.ant-layout.ant-layout-has-sider {
+  display: flex;
+  flex-direction: column;
 }
 .main.ant-layout-content {
   width: 80%;
@@ -13,6 +14,10 @@
   flex-direction: row;
 }
 .products-container {
+  padding: 16px 16px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #e8eae8;
+  align-content: flex-start;
 }

@@ -18,8 +18,13 @@ span.card-item-amount {
 }
 .ant-card.ant-card-bordered {
   cursor: pointer;
+  margin: 1rem .25em;
 }
 
 .ant-card.ant-card-bordered {
-    max-height: 350px;
+    overflow: hidden;
+    height: 300px;
+}
+.ant-card-cover img {
+    height: 200px;
 }

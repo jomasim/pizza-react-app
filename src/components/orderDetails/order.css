@@ -1,6 +1,7 @@
 .right-sidebar {
-  width: 400px;
   background: white;
+  width: 550px;
+  margin-left: auto;
 }
 .order-item {
   padding: 0 16px;
